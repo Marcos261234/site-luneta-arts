@@ -1,0 +1,416 @@
+*{
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo cabeçalho */
+header {
+    background: #0e2a4b; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 1px 0;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.logo-img{
+
+    width: 60px;
+    height: 60px;
+
+}
+
+/* Contêiner do cabeçalho */
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Estilo logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu de navegação */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #f39c12; /* Cor ao passar o mouse */
+}
+
+/* Menu (mobile) */
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Oculto por padrão */
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #131331;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .menu li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+main{
+
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/Não-Pode-Tem-Que-Negociar.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Estilo Sobre */
+
+section.sobre{
+
+    padding: 80px 4%;
+
+}
+
+.interface {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo h1{
+
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.titulo span{
+
+    font-size: 30px;
+    font-weight: 600;
+    color: #ce7a1a;
+
+}
+
+
+.flex {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+/* Imagem */
+
+.img-port {
+    width: 200px; 
+    height: 300px; 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-port .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-port:hover .overlay {
+    opacity: 1;
+}
+
+.img-port:active {
+    transform: scale(1.5);
+    z-index: 100;
+}
+
+.mais-art{
+
+    font-size: 20px;
+    margin-left: 470px;
+    padding: 80px 4%;
+
+}
+
+/* Estilo Artes */
+
+.mais-art i{
+
+    font-size: 20px;
+    height: 50px;
+    gap: 30px;
+    padding-left: 10px;
+
+}
+
+.mais-art a{
+
+    display: inline-block;
+    transition: .8s;
+
+}
+
+
+.mais-art i{
+
+    color: rgb(196, 102, 13);
+
+}
+
+.mais-art a:hover{
+
+    color: rgb(55, 90, 143);
+    transform: translateY(-8px);
+
+}
+
+
+.titulo_arts{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Linha */
+
+hr{
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #0f5686, #1a48723a);
+    margin: 30px 0;
+    border-radius: 2px;
+    border: none;
+
+}
+
+/* Linha */
+
+/*  Estilo Redes Sociaissss */
+
+section.redes-sociais .icons{
+
+    font-size: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-left: 10px;
+
+}
+
+.icons a{
+
+    display: block;
+    transition: .8s;
+
+}
+
+
+.icons i{
+
+    color: rgb(218, 100, 22);
+
+}
+
+.icons a:hover{
+
+    color: rgb(224, 103, 22);
+    transform: translateY(-8px);
+
+}
+
+section.redes-sociais h2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+
+/* Estilo Avisos */
+
+section.avisos .caixa-avisos{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.caixa {
+    width: 300px; /* Largura */
+    height: 200px; /* Altura */
+    background: #f1f1f1; /* Cor de fundo */
+    border: 2px solid #333; /* Borda */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 18px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+section.avisos h2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+/* Imagem Tem que Negociar */
+
+img.naopode{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 500px;
+    width: 20%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    height: auto;    /* Mantém a proporção * */
+    
+}
+
+/* Estilo Rodapé */
+
+footer{
+
+    padding: 20px 4%;
+    box-shadow: 0px -1px 1px rgba(255, 255, 255, 0.2);
+    margin-top: 60px;
+ 
+    
+}
+
+.line-footer{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 190px;
+    padding-left: 130px;
+
+}
+
+.line-footer p{
+
+    color: rgb(192, 81, 17);
+
+}
+
+.line-footer p a{
+
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.line-footer .icons{
+
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 15px;
+
+}
+
+/* Responsividade no rodapé */
+
+@media (max-width: 768px) {
+    .line-footer {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0; /* Remover o padding esquerdo em telas menores */
+        margin-right: 0; /* Ajuste de margens para centralizar */
+    }
+
+    .line-footer p {
+        text-align: center;
+        margin-bottom: 10px; /* Espaçamento entre os itens de texto */
+    }
+
+    .line-footer .icons {
+        flex-direction: row; /* Manter os ícones em linha */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .line-footer .icons i {
+        font-size: 30px; /* Aumenta o tamanho dos ícones em telas menores */
+    }
+
+    .line-footer p a {
+        font-size: 14px; /* Ajuste no tamanho da fonte */
+    }
+}
