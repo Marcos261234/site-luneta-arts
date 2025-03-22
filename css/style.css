@@ -73,7 +73,8 @@ header {
     display: none; /* Oculto por padrão */
 }
 
-/* Responsividade */
+/* Responsividade menu*/
+@media (max-width: 720px) {
 
     .menu {
 
