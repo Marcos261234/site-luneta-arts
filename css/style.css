@@ -67,54 +67,45 @@ header {
 }
 
 /* Menu (mobile) */
-.menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Oculto por padrão */
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
 }
 
-/* Responsividade menu*/
-@media (max-width: 720px) {
+.menu-toggle {
+    display: none;
+}
 
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
     .menu {
-
         display: none;
         flex-direction: column;
-        top: 60px;
-        right: 10px;
-        background: #131331;
-        width: 200px;
+        background: #3670bd;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+        padding: 10px;
         border-radius: 10px;
     }
 
-    .menu li {
-
-        padding: 10px;
-        text-align: center;
-    }
-
-    .menu-toggle a{
-
-       font-size: 20px;
-       color: #f1f1f1;
-       transition: 0.2s;
-
-    }
-
-    .menu-toggle a:hover{
-
-        color: #ce7a1a;
-
+    .menu.show {
+        display: flex;
     }
 
     .menu-toggle {
-        display: inline;
-    }
-
-    .menu.active {
-        display: flex;
+        display: inline-block;
+        cursor: pointer;
     }
 }
+
 
 main{
 
@@ -184,38 +175,43 @@ section.sobre{
     cursor: pointer;
 }
 
-.img-port .overlay {
+.overlay{
+    color: #ffffff00;
+}
 
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px;
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  #expanded-img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+  }
+  
+  .close-btn {
     position: absolute;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.img-port:hover .overlay {
-
-    opacity: 1;
-
-}
-
-.img-port:active {
-
-    transform: scale(1.5);
-    z-index: 100;
-}
-
-.mais-art{
-
-    font-size: 20px;
-    margin-left: 470px;
-    padding: 80px 4%;
-
-}
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .close-btn:hover {
+    color: #f00;
+  }
 
 /* Estilo Artes */
 

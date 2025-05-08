@@ -11,149 +11,107 @@
     <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- FONTES -->
-
 </head>
 <body>
-    
+
 <main>  
 
     <header>
         <div class="cabeçalho">
             <h1 class="logo">Luneta</h1>
-
+    
             <nav>
                 <ul class="menu">
                     <li><a href="#projetos_link">Início</a></li>
                     <li><a href="#artes-link">Artes</a></li>
-                    <li><a href="https://ig.me/m/lunetinh_444" target="_blank">Contato</a></li>
+                    <li><a href="https://www.instagram.com/direct/t/17847995345599178" target="_blank">Contato</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle" onclick="toggleMenu()"><a href="#projetos_link"><i class="bi bi-house"></i></a></div>
-
-            <div class="menu-toggle" onclick="toggleMenu()"><a href="#artes-link"><i class="bi bi-palette"></i></a></div>
-
-            <div class="menu-toggle" onclick="toggleMenu()"><a href="https://ig.me/m/lunetinh_444" target="_blank"><i class="bi bi-chat"></i></a></div>
-
-            
-        </div>
-
-        
-    </header>
     
+            <!-- Menu Luna para mobile -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- JavaScript -->
+    
+    <script src="js/script.js"></script>
+
+    <!-- JavaScript -->
+
     <section class="sobre" id="projetos_link">
-
-            <div class="interface">
-
-                <div class="titulo">
-
-                    <h1 class="titulo">Seja bem vindo ao mundo da <span>Luna.
-                    </span><img class="logo-img" src="img/ico-luna.png" alt=""></h1>
-                    
-
-                    <h2>Me chamo Lui, uma jovem apaixonada em arte. Eu desenho, escrevo, faço algumas pinturas e estou sempre aprendendo um novo tipo de arte ou estou sempre a aprimorar minhas habilidades artísticas. 
-                    logo abaixo você vai encontrar alguns dos meus trabalhos, artes e redes sociais.</h2>
-
-
+        <div class="interface">
+            <div class="titulo">
+                <h1 class="titulo">Seja bem-vindo ao mundo da <span>Luna</span><img class="logo-img" src="img/ico-luna.png" alt=""></h1>
+                <h2>Me chamo Lui, uma jovem apaixonada em arte. Eu desenho, escrevo, faço algumas pinturas e estou sempre aprendendo um novo tipo de arte ou aprimorando minhas habilidades artísticas. Logo abaixo você vai encontrar alguns dos meus trabalhos, artes e redes sociais.</h2>
+            </div>
+        </div>
     </section>
 
     <section class="artes" id="artes-link">
-
-
         <hr>
         <h1 class="titulo_arts">Arte em tela e papel</h1>
         <h1 class="titulo_arts">(tradicional)</h1>
 
         <div class="flex">
-
+            <!-- Imagem com background e clique -->
             <div class="img-port" style="background-image: url(img/481372558_1163812275398880_7841178429383457014_n.jpg)">
-
                 <div class="overlay">Arte 1</div>
-
             </div>
-
             <div class="img-port" style="background-image: url(img/481947283_2525097141160447_5545860856321035970_n.jpg)">
-
                 <div class="overlay">Arte 2</div>
-
             </div>
-
             <div class="img-port" style="background-image: url(img/foto-quadro2.png)">
-
                 <div class="overlay">Arte 3</div>
-
             </div>
-
             <div class="img-port" style="background-image: url(img/foto-quadro3.png)">
-
                 <div class="overlay">Arte 4</div>
-
             </div>
-
-
         </div>
 
+        <!-- Lightbox -->
+        
+        <div id="lightbox" class="lightbox">
+            <span id="close-lightbox" class="close-btn">&times;</span>
+            <img id="expanded-img" src="" alt="Imagem expandida">
+        </div>
+
+        <!-- Lightbox -->
+
         <h1 class="titulo_arts">Artes Digitais</h1>
-
         <div class="flex">
-
             <div class="img-port" style="background-image: url(img/fotodigital4_1.png)">
-
                 <div class="overlay">Arte 1</div>
-
             </div>
-
             <div class="img-port" style="background-image: url(img/fotodigital3_1.png)">
-
                 <div class="overlay">Arte 2</div>
-
             </div>
-
             <div class="img-port" style="background-image: url(img/fotodigial1.png)">
-
                 <div class="overlay">Arte 3</div>
-
             </div>
-
             <div class="img-port" style="background-image: url(img/fotodigital2.png)">
-
                 <div class="overlay">Arte 4</div>
-
             </div>
-
-
         </div>
 
         <h1 class="titulo_arts">Personalização </h1>
         <h1 class="titulo_arts">(Roupas e Ecobags)</h1>
-
         <div class="flex">
-
             <div class="img-port" style="background-image: url(img/roupa-luna.png)">
-
                 <div class="overlay">Arte 1</div>
-
             </div>
-
             <div class="img-port" style="background-image: url(img/roupa-luna2.png)">
-
                 <div class="overlay">Arte 2</div>
-
             </div>
-
             <div class="img-port" style="background-image: url(img/foto-luna-roupa3.jpg)">
-
                 <div class="overlay">Arte 3</div>
-
             </div>
-
             <div class="img-port" style="background-image: url(img/foto-luna-roupa4.jpg)">
-
                 <div class="overlay">Arte 4</div>
-
             </div>
-
         </div>
-
         <hr class="sombra">
     </section>
 
@@ -203,29 +161,22 @@
     
     </section>
 
+
     <footer>
-
         <div class="line-footer">
-
-                <p><i class="bi bi-envelope-fill"></i><a href="mailto:Mvinicius3212a@gmail.com"> Mvinicius3212a@gmail.com</a></p>
-
-                <p>projected by: @costa.tb</p>
-
-                    <div class="icons">
-
-                            <a href="https://wa.me/+5571992388798?text=Ol%C3%A1,%20quero%20falar%20com%20Marcos%20Costa." target="_blank"><i class="bi bi-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/costa.tb/" target="_blank"><i class="bi bi-instagram"></i></a>
-
-                    </div>
-
-                </div>
-
+            <p><i class="bi bi-envelope-fill"></i><a href="mailto:Mvinicius3212a@gmail.com"> Mvinicius3212a@gmail.com</a></p>
+            <p>projected by: @costa.tb</p>
+            <div class="icons">
+                <a href="https://wa.me/+5571992388798?text=Ol%C3%A1,%20quero%20falar%20com%20Marcos%20Costa." target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/costa.tb/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
         </div>
-
     </footer>
 
 </main>    
-    
 
+<!-- JavaScript -->
+<script src="js/script.js"></script>
 </body>
 </html>
+
